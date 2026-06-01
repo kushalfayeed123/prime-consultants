@@ -555,4 +555,9 @@
     .verbatim-list { padding-left: 20pt; margin-bottom: 15pt; }
     .verbatim-list li { font-size: 10.5pt; margin-bottom: 8pt; color: #333; list-style-type: disc; }
     .vision-mission-box { background: #f4f7f6 !important; padding: 20pt; border-radius: 5pt; margin-bottom: 20pt; font-size: 10.5pt; line-height: 1.5; }
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
 }
