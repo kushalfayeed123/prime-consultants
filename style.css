@@ -561,3 +561,98 @@
         gap: 30px;
     }
 }
+
+
+/* --- Mobile Responsive Overrides --- */
+
+@media (max-width: 768px) {
+    /* 1. Global Padding & Containers */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* 2. Navigation */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 3. Hero Section */
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2rem !important; /* Smaller size for mobile */
+        line-height: 1.2;
+    }
+
+    /* 4. Stats Bar */
+    .stats-bar {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    /* 5. Grids (About, Impact, Contact) */
+    .content-grid, 
+    .contact-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+    }
+
+    /* 6. Services Section */
+    .services-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    /* 7. Leadership Section */
+    .leadership-container {
+        padding: 0 20px;
+    }
+    .leader-card {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .leader-image-box {
+        margin: 0 auto 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* 8. Contact Form */
+    form {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    input, textarea {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* 9. Footer & Download Section */
+    #download-profile, footer {
+        padding: 60px 5% !important;
+    }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem !important;
+    }
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+}
